@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html version="-//W3C//DTD XHTML 1.1//EN"
+      xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/1999/xhtml
+                          http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd"
+>
+    <head>
+        <title>Seasonal-Menu-MexRest</title>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; 
+        charset=utf-8" /> 
+        <meta name="author" content="Jose Hernandez" />
+        <meta name="description" content="Seasonal meals, list of food 
+        available during the corresponding season." />
+        <meta name="keywords" content="seasonal, meals, traditional" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div id="header">
+            <ol class="contentlink-bc">
+                <li>
+                    <a href="." title="MexRes - El castillo">MexRes</a>
+                </li>
+                <li>
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a>Seasonal food</a>
+                </li>
+            </ol>
+            <ul id="navmenu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="markets.html">Mexican markets</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+        <div id="content"> 
+            <h1>Seasonal food</h1>
+            <p>List of food available during Spring (each dish includes 
+            description and price in Mexican pesos). Below each meal you have 
+            the option to add the meal you want to your order request. When you 
+            are done adding your meals just hit order and you will get your 
+            food.</p>
+            <p>Seasonality of food refers to the times of year when the harvest 
+            or the flavour of a given type food is at its peak. This is usually 
+            the time when the item is the freshest on the market. And each 
+            season characterizes for something.</p>
+            <h2>Spring</h2>
+            <p>Spring brings many things with it: colors, aromas, warmth and 
+            joy. Spring for some reason brings good and pleasant emotions. Also 
+            in this season you can find the best fruits.</p>
+            <p>The main dish is usually the heaviest, heartiest, and most
+            complex or substantive dish on a menu. Remember that the mexican 
+            main courses are served very well. You will love them!</p>
+            <ol class="food">
+                <li>Tamal oaxaca
+                <ul>
+                    <li class="desc">Tamal wrapped and baked in banana leaf 
+                    with chicken and red mole</li>
+                    <li>85 MXN</li>
+                    <li>
+                        <a href="images/big/tamal.jpg">
+                            <object type="image/jpg" 
+                            data="images/thumbs/tamal.jpg" 
+                            title="Tamal Oaxaca">Tamal Oaxaca</object>
+                        </a>
+                    </li>
+                    <li>
+                        <input type="submit" value="Add" id="tamal_add" />
+                    </li>
+                </ul>
+                </li>
+                <li>Ceviche yucateco
+                <ul>
+                    <li class="desc">Tilapia fish, marinated in lime juice, 
+                    served with avocado slices, black beans and white rice</li>
+                    <li>135 MXN</li>
+                    <li>
+                        <a href="images/big/ceviche.jpg">
+                            <object type="image/jpg" 
+                            data="images/thumbs/ceviche.jpg" 
+                            title="Ceviche yucateco">Ceviche Yucateco</object>
+                        </a>
+                    </li>
+                    <li>
+                        <input type="submit" value="Add" id="ceviche_add" />
+                    </li>
+                </ul>
+                </li>
+                <li>Molcajete
+                <ul>
+                    <li class="desc">Chicken and steak strips sautéed in a 
+                    mildly spicy sauce with mushrooms and onions. Garnished 
+                    with pico de gallo and a jalapeño pepper.</li>
+                    <li>160 MXN</li>
+                    <li>
+                        <a href="images/big/molcajete.jpg">
+                            <object type="image/jpg" 
+                            data="images/thumbs/molcajete.jpg" 
+                            title="Molcajete">Molcajete</object>
+                        </a>
+                    </li>
+                    <li>
+                        <input type="submit" value="Add" id="molcajete_add" />
+                    </li>
+                 </ul>
+                </li>
+            </ol>
+            <div class="order">
+                <h2>Summary order</h2>
+                <p>Here you will see the details of your order, and we need 
+                you to provide your name and address for the delivery. 
+                Thanks!</p>
+                <dl>
+                    <dt>Name</dt>
+                    <dd>
+                        <label>
+                            <input type="text" id="customer-name" />
+                            (required)
+                        </label>
+                    </dd>
+                    <dt>Address</dt>
+                    <dd>
+                        <label>
+                            <input type="text" id="customer-address" />
+                            (required)
+                        </label>
+                    </dd>
+                    <dt> </dt>
+                    <dd>
+                        <input type="submit" id="order-request-submit"
+                        value="Order" name="submit" />
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div id="footer">
+            <dl>
+                <dt>Author</dt>
+                <dd>Jose Hernandez</dd>
+                <dt>&#169; 2016</dt>
+                <dd>All rights reserved</dd>
+                <dt>On service by</dt>
+                <dd>Luis Castillo</dd>
+            </dl>
+        </div>
+    </body>
+</html>

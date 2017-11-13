@@ -1,0 +1,222 @@
+/* CSS style */
+
+html { 
+    background: url(images/mexico.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.2;
+    letter-spacing:0.02em;
+    color: black;
+    background: white;
+    width: 98%;
+    max-width: 62em;
+    margin: auto;
+}
+
+body a {
+    /*color: #009933;*/
+    font-weight: bold;
+}
+
+ul#navmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #CC3300;
+    overflow: hidden;
+}
+
+ul#navmenu li {
+    float: left;
+}
+
+ul#navmenu li a {
+    display: block;
+    background-color: #CC3300;
+    color: white;
+    text-align: center;
+    padding: 1em 3em 1em;
+    text-decoration: none;
+}
+
+ul#navmenu li a:hover {
+    background-color: #008000;
+}
+
+p a {
+    color: #00A800; 
+    font-size: 1.2em;
+}
+/*#00A800;*/
+h1, h2, h3 {
+    color: #CC3300;
+}
+
+/* #FFC04C, #FF581A, #FF6A32, #FF7C4C */
+#header {
+    /*margin: auto;*/
+    /*width: 100%;*/
+    color: white;
+    background: #008000; 
+    overflow: auto;
+}
+
+#content {
+    width: 98%;
+    max-width: 80em;
+    margin: auto;
+    padding-bottom: 4em;
+}
+
+.broken {
+    color: #006000; 
+}
+
+.contentlink-bc {
+    display: inline;
+    /*float: left;
+    /*width:100%;
+    /*max-width: 40em;
+    /*margin: auto;8
+    margin-right: auto;
+    margin-left: auto;*/
+}
+
+.contentlink-bc li {
+    list-style: none;
+	display: inline;
+	font-size: 3.0em;
+	/*margin-top: 1em; */
+}
+
+.contentlink-bc li:before {
+	content: ">";
+	color: white;
+}
+.contentlink-bc a {
+	color: white;
+}
+.contentlink-bc li:first-child:before {
+	content: none;
+}
+
+#footer {
+    /*width: 100%;*/
+    height: 100%;
+    color: white;
+    background: #008000;
+    overflow: auto;
+}
+
+#footer dt, #footer dd {
+    display: inline;
+    margin:0;
+}
+
+#footer dl {
+    padding: 0.5em;
+}
+
+#footer dt {
+   /* float: left;*/
+    font-weight: bold;
+}
+
+#footer dd:after {
+    content: '\A';
+    white-space: pre;
+}
+
+#footer dd:before {
+    content: ": ";
+}
+
+.seasons_list dt {
+    font-weight: bold;   
+}
+
+.seasons_list dt:after {
+    content: ':';
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding-left: 0.6em;
+}
+
+ol.food {
+    list-style-type: circle;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: space-around;
+}
+
+ol.food li {
+    padding-right: 2em;
+}
+
+.desc {
+    max-width: 25em;
+}
+
+#form_login {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    max-width: 22em;
+}
+
+#form_login input {
+    margin-bottom: 1em;
+}
+
+#form_login #submit {
+    width: 50%;
+    display: block;
+    padding: 0.5em;
+}
+
+#form_register {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    max-width: 22em;
+}
+
+#form_register input {
+    margin-bottom: 1em;
+}
+
+#form_register #submit {
+    width: 50%;
+    display: block;
+    padding: 0.5em;
+}
+
+@media print {
+    #header, #footer { display: none !important; }
+    input { display: none !important; }    
+    .order { display: none !important; }
+}
+
+@media only screen and (max-width: 67em) {
+    html {
+        background: none;
+    }
+} 
+
+
